@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/selectcity_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#000000">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <EditText
+                android:id="@+id/selectcity_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="      搜索全国城市(中文)"
+                android:textColorHint="#FFFFFF"
+                android:paddingLeft="35dp"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/selectcity_search_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/sousou"/>
+        </RelativeLayout>
+        <!--
+        <ImageView
+            android:id="@+id/title_selectcity_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/title_selectcity_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="当前城市：北京"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:gravity="center"/>
+        -->
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/selectcity_top">
+
+
+        <ListView
+            android:id="@+id/body_citylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
